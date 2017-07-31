@@ -7,6 +7,7 @@ import React from 'react';
 import AvatarFigure from './AvatarFigure'
 import SiderItem from './SiderItem'
 import Progress from './Progress'
+import ContentItem from './ContentItem'
 
 let avatarImage = require('../images/avatar.png');
 let yeomanImage = require('../images/yeoman.png');
@@ -75,8 +76,33 @@ class AppComponent extends React.Component {
             </SiderItem>
         </div>
         <div className = 'content'>
-          
+          <ContentItem title = '求职意向' icon = 'fa fa-id-card'>
+            <ul className = 'job-intention'>
+              <li><i className = 'fa fa-font-awesome'></i><span>前端开发</span></li>
+              <li><i className = 'fa fa-bandcamp'></i><span>实习</span></li>
+              <li><i className = 'fa fa-building'></i><span>广州/深圳/杭州/上海</span></li>
+              <li><i className = 'fa fa-calendar'></i><span>随时到岗</span></li>              
+            </ul>
+          </ContentItem>
+
+          <ContentItem title = '教育背景' icon = 'fa fa-mortar-board'>
+            长沙学院
+          </ContentItem>
+
+          <ContentItem title = '项目经验' icon = 'fa fa-mortar-board'>
+            长沙学院
+          </ContentItem>
+
+          <ContentItem title = '实习经历' icon = 'fa fa-mortar-board'>
+            长沙学院
+          </ContentItem>
+
+          <ContentItem title = '实习经历' icon = 'fa fa-mortar-board'>
+            长沙学院
+          </ContentItem>
         </div>
+
+        
         {/*<img src={avatarImage} alt="Yeoman Generator" />*/}
         {/*<div className="notice">Please edit <code>src/components/Main.js</code> to get started!</div>*/}
       </div>
