@@ -29,7 +29,7 @@ class AppComponent extends React.Component {
             <AvatarFigure {...avatarProps} />
             <SiderItem title = '个人信息'>
               <ul className = 'person-info'>
-                <li><i className='fa fa-venus'></i><span>女</span></li>
+                <li><i className='fa fa-female'></i><span>女</span></li>
                 <li><i className='fa fa-birthday-cake'></i><span>1995-02-08</span></li>
                 <li><i className='fa fa-map-marker'></i><span>湖南-长沙</span></li>
                 <li><i className='fa fa-language'></i><span>CET-6</span></li>
@@ -54,10 +54,29 @@ class AppComponent extends React.Component {
             </SiderItem>
 
             <SiderItem title = '兴趣爱好'>
-              
+              <ul className='hoby'>
+                <li>
+                  <i className='fa fa-book'></i>
+                  <span>阅读</span>
+                </li>
+                <li>
+                  <i className='fa fa-futbol-o'></i>
+                  <span>运动</span>
+                </li>
+                <li>
+                  <i className='fa fa-paint-brush'></i>
+                  <span>书法</span>
+                </li>
+                <li>
+                  <i className='fa fa-ship'></i>
+                  <span>烹饪</span>
+                </li>
+              </ul>
             </SiderItem>
         </div>
-        <div className = 'content'></div>
+        <div className = 'content'>
+          
+        </div>
         {/*<img src={avatarImage} alt="Yeoman Generator" />*/}
         {/*<div className="notice">Please edit <code>src/components/Main.js</code> to get started!</div>*/}
       </div>
