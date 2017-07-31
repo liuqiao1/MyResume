@@ -1,0 +1,51 @@
+@import './color/theme.less';
+
+.sider-item{
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    // padding: 20px 30px 20px 30px;
+
+    .item-header{
+        position: relative;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        // margin-left: -30px;
+        // margin-bottom: 20px;
+        // background-color: @primary-color;
+        // color: white;
+        
+        h2{
+            display: block;
+            height: 100%;
+            width: 85%;
+            float: left;
+            // margin-left: -30px;
+            padding-left: 30px;
+            // position: absolute;
+            // left: 0px;
+            background-color: @primary-color;
+            color: white;
+        }
+
+        .trangle{
+            // display: 
+            float: left;
+            height: 0;
+            width: 0;
+            // margin-right: -30px;
+            // border-width: 18px;
+            border-left: 25px solid @primary-color;
+            border-top: 20px solid transparent;
+            border-right: 11px solid transparent;
+            border-bottom: 20px solid transparent;
+            // border-left-color: @primary-color;
+        }  
+    }
+
+    .item-content{
+           padding:20px 30px 20px 30px;
+       }
+}
