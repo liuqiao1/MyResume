@@ -6,6 +6,7 @@ require("font-awesome-webpack");
 import React from 'react';
 import AvatarFigure from './AvatarFigure'
 import SiderItem from './SiderItem'
+import Progress from './Progress'
 
 let avatarImage = require('../images/avatar.png');
 let yeomanImage = require('../images/yeoman.png');
@@ -42,11 +43,18 @@ class AppComponent extends React.Component {
                 <li><i className='fa fa-envelope'></i><span>liuqiao@csu.edu.cn</span></li>  
               </ul>
             </SiderItem>
-            <SiderItem title = '技能图谱'>
-              <ul className = 'person-info'>
-                <li><i className='fa fa-phone'></i><span>188-7497-5415</span></li>
-                <li><i className='fa fa-envelope'></i><span>liuqiao@csu.edu.cn</span></li>  
-              </ul>
+            <SiderItem title = '技能'>
+              <Progress lable='HTML' levelDesp='熟练' level='80%' />
+              <Progress lable='CSS' levelDesp='熟练' level='80%' />
+              <Progress lable='Javascript' levelDesp='熟练' level='80%' />
+              <Progress lable='JQuery' levelDesp='熟练' level='80%' />
+              <Progress lable='Bootstrap' levelDesp='良好' level='70%' />
+              <Progress lable='React' levelDesp='良好' level='70%' />
+              <Progress lable='Webpack' levelDesp='良好' level='70%' />
+            </SiderItem>
+
+            <SiderItem title = '兴趣爱好'>
+              
             </SiderItem>
         </div>
         <div className = 'content'></div>

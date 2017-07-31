@@ -1,0 +1,32 @@
+@import './color/theme.less';
+
+.progress{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    
+
+    .progress-lable{
+        color: @sider-text-color;
+        font-size: 16px;
+    }
+
+    .progress-container{
+        position: absolute;
+        left: 0;
+        width: 80%;
+        height: 10px;
+        margin: 5px 0;
+        
+        .progress-level{
+            height: 100%;
+            background-color: @assist-color;
+        }
+    }
+
+    .level-desp{
+        position: absolute;
+        right: 0;
+        font-size: 14px;
+    }
+}
