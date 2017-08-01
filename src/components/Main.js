@@ -116,7 +116,7 @@ class AppComponent extends React.Component {
             <NodeItem when = '2012.09 - 2016.06' where = '长沙大学' what = '软件工程（本科）'/>       
           </ContentItem>
 
-          <ContentItem title = '项目经验' icon = 'fa fa-mortar-board'>
+          <ContentItem title = '项目经验' icon = 'fa fa-product-hunt'>
             <NodeItem when = '2017.02 - 2017-06' where = '现代烟草农业基础设施管理系统' what = '湖南瑞和科技（实习）'>
 
               <article className = 'project-node'>
@@ -199,7 +199,7 @@ class AppComponent extends React.Component {
             
           </ContentItem>
 
-          <ContentItem title = '技能' icon = 'fa fa-mortar-board'>
+          <ContentItem title = '技能' icon = 'fa fa-space-shuttle'>
              {/*<Progress lable='CSS' levelDesp='熟练' level='80%' />*/}
              <div className = 'left-sec'>
               <article className = 'project-node'>
