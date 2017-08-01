@@ -12,7 +12,7 @@ const ContentItem = ({...props}) => {
             <i className = {icon}></i>
             <span>{title}</span>
         </header>
-        <div className = 'item-content'>
+        <div className = 'item-content clearfix'>
             {children}
         </div>
     </section>

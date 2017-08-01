@@ -1,0 +1,28 @@
+@import './color/theme.less';
+.NodeItem-item{
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+
+    .node-header{
+      margin-bottom: 5px;  
+      span{
+        display: block;
+        float: left;
+        width: 33.3%;
+        height: 20px;
+        overflow: hidden;
+
+        font: 16px;
+        font-weight: bold;
+        color: @node-title-color;
+    }   
+    }
+
+  
+}
+
+/*清除浮动*/
+.clearfix{
+    overflow: auto;
+}
