@@ -17,7 +17,7 @@ class AppComponent extends React.Component {
   
   render() {
     const avatarProps = {
-      avatarURL: '/src/images/avatar.png',
+      avatarURL: '../images/avatar.png',
       title: '刘巧',
     }
 
