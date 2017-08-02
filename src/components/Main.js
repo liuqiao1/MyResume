@@ -9,6 +9,7 @@ import SiderItem from './SiderItem'
 import Progress from './Progress'
 import ContentItem from './ContentItem'
 import NodeItem from './NodeItem'
+import ArticleFigure from './ArticleFigure'
 
 let avatarImage = require('../images/avatar.png');
 let yeomanImage = require('../images/yeoman.png');
@@ -64,7 +65,7 @@ class AppComponent extends React.Component {
 
           <ContentItem title = '项目经验' icon = 'fa fa-product-hunt'>
             <NodeItem when = '2017.02 - 2017-06' where = '现代烟草农业基础设施管理系统' what = '湖南瑞和科技（实习）'>
-
+              <ArticleFigure title= '项目' icon = 'fa fa-star' listItems = {["1","2","2"]} />
               <article className = 'project-node'>
                 <div className = 'project-node-title'><i className = 'fa fa-star'></i>项目描述</div>
                 <div className = 'project-node-content'>
