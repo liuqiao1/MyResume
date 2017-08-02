@@ -1,4 +1,4 @@
-require('./AvatarFigure.less');
+require('../styles/AvatarFigure.less');
 
 import React from 'react'
 
@@ -12,8 +12,6 @@ const AvatarFigure = ({...props}) => {
             <h2>{title}</h2>
         </figcaption>
     </figure>
-    
-    
   );
 }
 

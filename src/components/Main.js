@@ -13,93 +13,39 @@ import NodeItem from './NodeItem'
 let avatarImage = require('../images/avatar.png');
 let yeomanImage = require('../images/yeoman.png');
 
+const pageData = require('../data/data.json');
+// console.log(pageData);
+
 class AppComponent extends React.Component {
   
   render() {
     const avatarProps = {
       avatarURL: require('../images/avatar.png'),
-      title: '刘巧',
+      title: pageData.avatarProps.title,
     }
 
-    const basicInfoProps= {
-      title: '个人信息'
-    }
+    const siderItems = pageData.siderItems;
+    //const basicInfoProps =  pageData.basicInfoProps;
+    //const contanctProps = pageData.contanctProps;
+    //const jobIntentionProps = pageData.jobIntention;
 
     return (
       <div className="index">
         <div className = 'sider'>
             <AvatarFigure {...avatarProps} />
-            <SiderItem title = '个人信息'>
-              <ul className = 'person-info'>
-                <li><i className='fa fa-female'></i><span>女</span></li>
-                <li><i className='fa fa-birthday-cake'></i><span>1995-02-08</span></li>
-                <li><i className='fa fa-map-marker'></i><span>湖南 - 长沙</span></li>
-                <li><i className='fa fa-language'></i><span>CET - 6</span></li>
-                {/*<li><i className='fa fa-github'></i><span>https://github.com/liuqiao1</span></li>*/}
-                <li><i className='fa fa-github'></i><span><a href='https://github.com/liuqiao1' target='blank'>https://github.com/liuqiao1</a></span></li>
-              </ul>
-            </SiderItem>
-            <SiderItem title = '联系方式'>
-              <ul className = 'person-info'>
-                <li><i className='fa fa-phone'></i><span>188-7497-5415</span></li>
-                <li><i className='fa fa-envelope'></i><span>liuqiao@csu.edu.cn</span></li>  
-              </ul>
-            </SiderItem>
-            <SiderItem title = '求职意向'>
-              {/*<Progress lable='HTML' levelDesp='熟练' level='80%' />
-              <Progress lable='CSS' levelDesp='熟练' level='80%' />
-              <Progress lable='Javascript' levelDesp='熟练' level='80%' />
-              <Progress lable='JQuery' levelDesp='熟练' level='80%' />
-              <Progress lable='Bootstrap' levelDesp='良好' level='70%' />
-              <Progress lable='React' levelDesp='良好' level='70%' />
-              <Progress lable='Webpack' levelDesp='良好' level='70%' />*/}
-              <ul className = 'person-info'>
-              <li><i className = 'fa fa-font-awesome'></i><span>前端开发</span></li>
-              <li><i className = 'fa fa-bandcamp'></i><span>实习</span></li>
-              <li><i className = 'fa fa-building'></i><span>广州 / 深圳 / 杭州 / 上海</span></li>
-              <li><i className = 'fa fa-calendar'></i><span>随时到岗</span></li>              
-            </ul>
-            </SiderItem>
 
-            <SiderItem title = '奖励'>
-               <ul className = 'person-info'>
-                <li><i className='fa fa-star-half-full'></i><span>2012-2013 国家励志奖学金</span></li>
-                <li><i className='fa fa-star-half-full'></i><span>2013-2014 校级甲等奖学金</span></li>
-                <li><i className='fa fa-star-half-full'></i><span>2012-2013 校级优秀学生</span></li>
-                
-              </ul>
-            </SiderItem>
-
-             <SiderItem title = '自我评价'>
-               <ul className = 'person-info'>
-                <li><i className='fa fa-heart'></i><span>热爱技术，热爱web前端</span></li>
-                <li><i className='fa fa-adjust'></i><span>能够承受高强度的工作压力</span></li>
-                <li><i className='fa fa-cube'></i><span>乐于尝试用新技术来解决问题</span></li>
-                <li><i className='fa fa-smile-o'></i><span>性格开朗，积极乐观</span></li>
-                
-              </ul>
-            </SiderItem>
-
-            <SiderItem title = '兴趣爱好'>
-              <ul className='hoby'>
-                <li>
-                  <i className='fa fa-book'></i>
-                  <span>阅读</span>
-                </li>
-                <li>
-                  <i className='fa fa-futbol-o'></i>
-                  <span>运动</span>
-                </li>
-                <li>
-                  <i className='fa fa-paint-brush'></i>
-                  <span>书法</span>
-                </li>
-                <li>
-                  <i className='fa fa-ship'></i>
-                  <span>烹饪</span>
-                </li>
-              </ul>
-            </SiderItem>
+            {
+              siderItems.map( (item,key) => 
+                 <SiderItem title = {item.title}>
+                   <ul className = {key == siderItems.length-1 ? 'hoby':'person-info'}>
+                      {
+                        siderItems[key].content.map((item,key) => <li><i className={item.icon}></i><span>{item.lable}</span></li>)
+                      }
+                   </ul>
+                 </SiderItem>
+              )
+            }
+           
         </div>
         <div className = 'content'>
           {/*<ContentItem title = '求职意向' icon = 'fa fa-id-card'>

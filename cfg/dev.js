@@ -23,6 +23,7 @@ let config = Object.assign({}, baseConfig, {
       searchResolveModulesDirectories: false
     })
   ],
+  // publicPath: '/assets/',
   module: defaultSettings.getDefaultModules()
 });
 

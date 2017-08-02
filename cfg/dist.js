@@ -26,6 +26,7 @@ let config = Object.assign({}, baseConfig, {
     new webpack.optimize.AggressiveMergingPlugin(),
     new webpack.NoErrorsPlugin()
   ],
+  // publicPath: 'assets/',
   module: defaultSettings.getDefaultModules()
 });
 

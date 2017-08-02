@@ -1,0 +1,102 @@
+{
+   
+    "avatarProps":{
+        "title":"刘巧",
+        "avatarURL": "../images/avatar.png"
+    },
+    "siderItems":[
+        {
+            "title":"个人信息",
+            "content":[
+            {
+                "lable":"女",
+                "icon":"fa fa-female"
+            },{
+                "lable":"湖南 - 长沙",
+                "icon":"fa fa-map-marker"
+            },{
+                "lable": "CET - 6",
+                "icon": "fa fa-language"
+            },{
+                "lable": "https://github.com/liuqiao1",
+                "icon": "fa fa-github"
+            }]
+        },{
+        "title": "联系方式",
+        "content":[
+           {
+               "lable": "188-7497-5415",
+               "icon": "fa fa-phone"
+           },{
+               "lable": "liuqiao@csu.edu.cn",
+               "icon" :"fa fa-envelope"
+           }
+        ]
+       },{
+        "title": "求职意向",
+        "content":[
+           {
+               "lable": "前端开发",
+               "icon": "fa fa-font-awesome"
+           },{
+               "lable": "实习",
+               "icon" :"fa fa-bandcamp"
+           },{
+               "lable": "广州 / 深圳 / 杭州 / 上海",
+               "icon" :"fa fa-bandcamp"
+           },{
+               "lable": "随时到岗",
+               "icon" :"fa fa-calendar"
+           }
+        ]
+        },{
+            "title": "奖励",
+          
+            "content":[
+            {
+                "lable": "2012-2013 国家励志奖学金",
+                "icon": "fa fa-star-half-full"
+            },{
+                "lable": "2013-2014 校级甲等奖学金",
+                "icon" :"fa fa-star-half-full"
+            },{
+                "lable": "2012-2013 校级优秀学生",
+                "icon" :"fa fa-star-half-full"
+            }
+            ]
+        },{
+            "title": "自我评价",
+         
+            "content":[
+            {
+                "lable": "热爱技术，热爱web前端",
+                "icon": "fa fa-heart"
+            },{
+                "lable": "能够承受高强度的工作压力",
+                "icon" :"fa fa-adjust"
+            },{
+                "lable": "乐于尝试用新技术来解决问题",
+                "icon" :"fa fa-cube"
+            }
+            ]
+        },{
+            "title": "兴趣爱好",
+            "content":[
+            {
+                "lable": "阅读",
+                "icon": "fa fa-book"
+            },{
+                "lable": "运动",
+                "icon" :"fa fa-futbol-o"
+            },{
+                "lable": "书法",
+                "icon" :"fa fa-paint-brush"
+            },{
+                "lable": "烹饪",
+                "icon" :"fa fa-ship"
+            }
+            ]
+        }
+    ]
+    
+}

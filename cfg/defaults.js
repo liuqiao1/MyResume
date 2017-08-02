@@ -58,13 +58,17 @@ function getDefaultModules() {
          test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
          loader: "file-loader"
       }
+      ,{
+         test: /\.json/,
+         loader: "json-loader"
+      }
     ]
   };
 }
 
 module.exports = {
   srcPath: srcPath,
-  publicPath: 'assets/',
+  publicPath: '/assets/',
   port: dfltPort,
   getDefaultModules: getDefaultModules
 };
