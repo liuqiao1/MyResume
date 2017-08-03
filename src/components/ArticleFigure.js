@@ -10,7 +10,7 @@ const ArticleFigure = ({...props}) => {
         <div className = 'project-node-title'><i className = {icon}></i>{title}</div>
         <div className = 'project-node-content'>
             <ul>
-                {listItems.map( (item,key) => <li>{item}</li> )}
+                {listItems.map( (item,key) => <li key={key}>{item}</li> )}
             </ul>
         </div>
     </article>
