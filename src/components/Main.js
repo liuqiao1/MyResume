@@ -28,9 +28,7 @@ class AppComponent extends React.Component {
     const siderItems = pageData.siderItems;
     const contentItems = pageData.contentItems;
     const skills = pageData.skills;
-    //const basicInfoProps =  pageData.basicInfoProps;
-    //const contanctProps = pageData.contanctProps;
-    //const jobIntentionProps = pageData.jobIntention;
+
     
     return (
       <div className="index">
@@ -51,14 +49,7 @@ class AppComponent extends React.Component {
            
         </div>
         <div className = 'content'>
-          {/*<ContentItem title = '求职意向' icon = 'fa fa-id-card'>
-            <ul className = 'job-intention clearfix'>
-              <li><i className = 'fa fa-font-awesome'></i><span>前端开发</span></li>
-              <li><i className = 'fa fa-bandcamp'></i><span>实习</span></li>
-              <li><i className = 'fa fa-building'></i><span>广州/深圳/杭州/上海</span></li>
-              <li><i className = 'fa fa-calendar'></i><span>随时到岗</span></li>              
-            </ul>
-          </ContentItem>*/}
+          
           {/*如果箭头函数的代码块部分多于一条语句，就要使用大括号将它们括起来，并且使用 return 语句返回。由于大括号被解释为代码块，所以如果箭头函数直接返回一个对象，必须在对象外面加上括号。*/}
           {
             contentItems.map((item,key) => 
@@ -80,7 +71,7 @@ class AppComponent extends React.Component {
          
 
           <ContentItem title = {skills.title} icon = {skills.icon}>
-             {/*<Progress lable='CSS' levelDesp='熟练' level='80%' />*/}
+
              <div className = 'left-sec'>
                {
                  skills.leftArticles.map( (item,key) => 
