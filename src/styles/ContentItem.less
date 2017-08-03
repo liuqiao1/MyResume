@@ -2,9 +2,22 @@
 
 .content-item{
     position: relative;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
     width: 100%;
     height: auto;
     padding: 20px 20px 15px 20px;
+    background-color: @bg-color;
+
+    // transition: top 1s ease-in-out;
+
+    animation: contentIn 2s;
+    -moz-animation: contentIn 2s;	/* Firefox */
+    -webkit-animation: contentIn 2s;	/* Safari 和 Chrome */
+    -o-animation: contentIn 2s;	/* Opera */
+
+    animation-fill-mode: forwards;
     // margin-bottom: 10px;
 
     // padding: 20px 30px 20px 30px;
@@ -73,4 +86,67 @@
         border-top: 1px solid #e8e8e8;
     }
 
+}
+
+@keyframes contentIn{
+    from {
+        // position: absolute;
+        // left: 0;
+        // top: 0;
+
+        opacity: 0;
+    }
+    to{
+    //    position: relative;
+       opacity: 1;
+    //    float: left;
+    }
+}
+
+@-moz-keyframes contentIn /* Firefox */
+{
+    from {
+        // position: absolute;
+        // left: 0;
+        // top: 0;
+
+        opacity: 0;
+    }
+    to{
+    //    position: relative;
+    //    float: left;
+       opacity: 1;
+    }
+}
+
+@-webkit-keyframes contentIn /* Safari 和 Chrome */
+{
+   from {
+        // position: absolute;
+        // left: 0;
+        // top: 0;
+
+        opacity: 0;
+    }
+    to{
+    //    position: relative;
+    //    float: left;
+       opacity: 1;
+    }
+}
+
+@-o-keyframes contentIn /* Opera */
+{
+    from {
+        // position: absolute;
+        // left: 0;
+        // top: 0;
+
+        opacity: 0;
+    }
+    to{
+    //    position: relative;
+    //    float: left;
+       opacity: 1;
+    }
 }

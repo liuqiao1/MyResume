@@ -14,26 +14,27 @@ import ArticleFigure from './ArticleFigure'
 let avatarImage = require('../images/avatar.png');
 let yeomanImage = require('../images/yeoman.png');
 
-const pageData = require('../data/data.json');
-// console.log(pageData);
+// const pageData = JSON.parse( require('../data/data.json') );
+const pageData = require('../data/data.json') ;
+
+//console.log(pageData);
 
 class AppComponent extends React.Component {
   
-  render() {
-    const avatarProps = {
-      avatarURL: require('../images/avatar.png'),
-      title: pageData.avatarProps.title,
-    }
+  componentDidMount(){
+    console.log("componentDidMount...");
+  }
 
-    const siderItems = pageData.siderItems;
+  render() {  
+    const avatarProps = pageData.avatarProps;
+    const siderItems = pageData.siderItems ;
     const contentItems = pageData.contentItems;
     const skills = pageData.skills;
 
-    
     return (
       <div className="index">
         <div className = 'sider'>
-            <AvatarFigure {...avatarProps} />
+            <AvatarFigure title = {avatarProps.title} avatarURL = {require('../images/avatar.png')}/>
 
             {
               siderItems.map( (item,key) => 
@@ -59,7 +60,7 @@ class AppComponent extends React.Component {
                    <NodeItem key={key} when = {item.when} where = {item.where} what = {item.what} >
                        { item.articles?
                          item.articles.map( (item,key) => 
-                             <ArticleFigure  title= {item.title} icon = {item.icon} listItems = {item.listItems} />
+                             <ArticleFigure key={key}  title= {item.title} icon = {item.icon} listItems = {item.listItems} />
                          ):''
                        }
                    </NodeItem>

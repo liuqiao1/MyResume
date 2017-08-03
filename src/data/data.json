@@ -77,6 +77,9 @@
             },{
                 "lable": "乐于尝试用新技术来解决问题",
                 "icon" :"fa fa-cube"
+            },{
+                "lable": "性格开朗，积极乐观",
+                "icon" :"fa fa-smile-o"
             }
             ]
         },{
@@ -128,7 +131,7 @@
                             "listItems" :[
                                 "该项目为湖南省烟草专卖局提供一个管理烟叶基础设施建设的平台。",
                                 "项目主要功能模块：项目申请，计划管理，过程管理，设计管理，验收管理，数据统计分析等。",
-                                "该项目基于开源框架jeesite开发，前端使HTML,CSS,JavaScript,jQuery,BootStrap,Ajax.Json;",
+                                "该项目基于开源框架开发，前端使<mark>HTML</mark>,CSS,JavaScript,jQuery,BootStrap,Ajax.Json;",
                                 "后端使用JAVA，SSM框架，数据库使用mySQL,代码管理使用SVN。"
                             ]
                         },{

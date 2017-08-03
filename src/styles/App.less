@@ -1,53 +1,10 @@
-/* Base Application Styles */
-/*去除浏览器默认的边距，清扫战场*/
 @import './color/theme.less';
-
-body,div,ul,li,dl,dt,dd,a,p,h1,h2,h3,textarea{
-    margin: 0;
-    padding: 0;
-
-    font-family:Arial, Helvetica, sans-serif;
-}
-/*这种方式不建议使用，因为有些元素没有必要致其于死地*/
-/**{
-    margin: 0;
-    padding: 0; 
-}*/
-
-ol,ul,li{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-    // display: block;
-    color: @sider-text-color;
-
-    &:hover{
-        color: @primary-color;
-    }
-}
-
-
-
-img{
-    display: block;
-    border: none;
-}
-
-*{
-    box-sizing: border-box;
-}
-
-/*清除浮动*/
-.clearfix{
-    overflow: auto;
-}
+@import './common.less';
 
 body {
   /*color: #fff;
   background: #222;*/
-  background: #fff;
+  background: @bg-color;
   color: #222;
 }
 
@@ -58,13 +15,22 @@ body {
 
     .sider{
         position: absolute;
+        // left: 25%;
         left: 0;
         top: 0;
         bottom: 0;
+        //float: left;
 
         width: 25%;
         // background-color: cornflowerblue;
         height: 100%;
+        // transform: translateX(-315.75);
+        // transition: transform 2s ease-in-out;
+
+        animation: siderIn 1s;
+        -moz-animation: siderIn 1s;	/* Firefox */
+        -webkit-animation: siderIn 1s;	/* Safari 和 Chrome */
+        -o-animation: siderIn 1s;	/* Opera */
     }
 
     .content{
@@ -72,30 +38,15 @@ body {
         right: 0;
         top: 0;
         bottom: 0;
+        //float: right;
 
         width: 75%;
-        background: #fff;
+        background: @bg-color;
         height: 100%;
 
         padding: 40px 20px 0px 14px;
     }
 }
-
-// .index img {
-//   margin: 40px auto;
-//   border-radius: 4px;
-//   background: #fff;
-//   display: block;
-// }
-
-// .index .notice {
-//   margin: 20px auto;
-//   padding: 15px 0;
-//   text-align: center;
-//   border: 1px solid #000;
-//   border-width: 1px 0;
-//   background: #666;
-// }
 
 .person-info{
     font-size: 14px;
@@ -164,31 +115,6 @@ body {
     }
 }
 
-.project-node{
-    position: relative;
-    width: 100%;
-    color: @text-color;
-    margin-bottom: 10px;
-
-    &-title{
-         color: @title-text-color;
-         margin-bottom: 5px;
-
-         
-    }
-
-    &-content{
-        padding-left: 30px;
-        line-height: 20px;
-    }
-
-    ul{
-        li{
-             list-style: decimal;
-        }
-    }
-}
-
 .left-sec{
     width: 50%;
     float: left;
@@ -197,3 +123,53 @@ body {
     width: 50%;
     float: right;
 }
+
+@keyframes siderIn{
+    from {
+        //transform: translateX(0);
+        left: -315.75px;
+    }
+    to{
+        left: 0;
+        //transform: translateX(315.75);
+    }
+}
+@-moz-keyframes siderIn /* Firefox */
+{
+  from {
+        //transform: translateX(0);
+        left: -315.75px;
+    }
+    to{
+        left: 0;
+        //transform: translateX(315.75);
+    }
+}
+
+@-webkit-keyframes siderIn /* Safari 和 Chrome */
+{
+   from {
+        //transform: translateX(0);
+        left: -315.75px;
+    }
+    to{
+        left: 0;
+        //transform: translateX(315.75);
+    }
+}
+
+@-o-keyframes siderIn /* Opera */
+{
+    from {
+        //transform: translateX(0);
+        left: -315.75px;
+    }
+    to{
+        left: 0;
+        //transform: translateX(315.75);
+    }
+}
+
+
+
+

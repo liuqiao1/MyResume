@@ -1,3 +1,4 @@
+@import './color/theme.less';
 .avatar-figure{
     position: relative;
     // width: 100%;
@@ -12,6 +13,16 @@
         margin: 15px auto;
         border-radius: 50%;
         border: 4px solid #e5e5e5;//2px solid cornflowerblue;
+       
+
+        &:hover{
+            border-color: @primary-color;
+            transform: rotate(360deg);
+        }
+
+        transition: border-color 1s ease-in-out;
+        transition: transform .6s ease-in-out;
+        
     }
 
     figcaption{
@@ -20,6 +31,7 @@
             font-size: 30px;
             color: #414141;   
             // font-family: Microsoft YaHei;
+            letter-spacing: 10px;
         }
     }
 }
