@@ -130,9 +130,9 @@
                             "icon":"fa fa-star",
                             "listItems" :[
                                 "该项目为湖南省烟草专卖局提供一个管理烟叶基础设施建设的平台。",
-                                "项目主要功能模块：项目申请，计划管理，过程管理，设计管理，验收管理，数据统计分析等。",
-                                "该项目基于开源框架开发，前端使<mark>HTML</mark>,CSS,JavaScript,jQuery,BootStrap,Ajax.Json;",
-                                "后端使用JAVA，SSM框架，数据库使用mySQL,代码管理使用SVN。"
+                                "主要功能模块：项目申请，计划管理，过程管理，设计管理，验收管理，数据统计分析等。",
+                                "基于开源框架 jeesite 开发，前端使HTML，CSS，JavaScript，jQuery，BootStrap，Ajax，Json。",
+                                "后端使用JAVA语言，SSM框架，数据库使用mySQL，代码管理使用SVN。"
                             ]
                         },{
                             "title":"项目职责",
@@ -147,10 +147,10 @@
                             "title":"项目收获",
                             "icon":"fa fa-star",
                             "listItems" :[
-                                "增强了沟通技能和页面设计能力；熟悉jeesite框架；熟练使用Bootstrap，jQuery；熟悉优秀开源插件，例如Echarts(显示表的阶段性产出信息)，Ztree(渲染类目)等。",
-                                "增强了对交互性，人性化的理解。",
-                                "熟练使用Ajax，JSON，SVN；合作能力提升；熟悉了后端框架SSM。",
-                                "理解并运用JQuery插件开发，Prototype思想；运用闭包访问私有变量；用Json传递参数。"
+                                "巩固了javascript基础，学会使用Bootstrap,JQuery等框架。",
+                                "熟悉了后端框架SSM, 用Json传递数据, 用Ajax请求 / 接受数据进行局部刷新。",
+                                "根据业务需求寻找和使用优秀开源插件，例如Echarts(使数据可视化)，Ztree(渲染类目)等。",
+                                "增强了沟通合作能力，页面设计能力，以及对交互性，人性化的理解。"
                             ]
                         }
                     ]
@@ -165,22 +165,23 @@
                             "listItems" :[
                                 "该项目为国家电网各变电站提供一个信息化集成平台，通过此平台实现对站内巡检机器人及巡检 信息的管理。",
                                 "项目主要功能模块：机器人管理，任务管理，实时监控，巡检结果确认，巡检结果对比分析，系统设置。",
-                                "该项目采用前后端分离的开发方式，前端基于dva(基于redux、redux-saga和reactrouter@2.x 的轻量级前端框架)实现。"
+                                "该项目采用前后端分离的开发方式，前端基于dva(基于redux、redux-saga和react-router@2.x 的轻量级前端框架)实现。"
                             ]
                         },{
                             "title":"项目职责",
                             "icon":"fa fa-star",
                             "listItems" :[
-                                "负责机器人管理，任务管理，巡检结果分析等模块的静态页面设计与实现。",
-                                "负责编写部分可重用的无状态组件。",
+                                "根据设计图制作部分模块的静态页面。",
+                                "实现页面的前端逻辑和交互效果。",
                                 "维护项目的develop分支。"
                             ]
                         },{
                             "title":"项目收获",
                             "icon":"fa fa-star",
                             "listItems" :[
-                                "熟悉并使用MVVM模型的框架－react.js；使用Less预编译CSS ；使用ES6特性简化代码。",
-                                "熟悉并使用前端资源加载/打包工具－webpack；使用 RequireJS加载模块，重视模块的复用以 及模块之间的解耦。",
+                                "熟悉并使用MVVM模型的框架－react.js。",
+                                "使用Less预编译CSS，使用 RequireJS加载模块，使用ES6特性简化代码。",
+                                "熟悉并使用前端资源加载/打包工具－webpack。",
                                 "熟练使用github常用操作命令，理解工作流程，正确处理冲突。"
                             ]
                         }
@@ -203,7 +204,7 @@
                 "icon":"fa fa-star",
                 "listItems" :[
                     "熟悉 ECMAScript3、ECMAScript5",
-                    "了解ECMAScript6 , 并在项目中使用部分新特性"
+                    "了解ECMAScript6，并在项目中使用部分新特性"
                 ]
             },{
                 "title":"DOM / BOM",
@@ -215,7 +216,7 @@
                 "title":"JAVA",
                 "icon":"fa fa-star",
                 "listItems" :[
-                    "熟悉面向对象编程思想, 了解SSM框架"
+                    "熟悉面向对象编程思想，了解SSM框架"
                 ]
             },{
                 "title":"Ajax",
@@ -230,9 +231,9 @@
                 "title":"前端框架 / 工具",
                 "icon":"fa fa-star",
                 "listItems" :[
-                    "熟练使用 jQuery, 熟悉jQuery插件开发",
+                    "熟练使用 jQuery， 熟悉jQuery插件开发",
                     "熟悉MVVM的思想，熟悉ReactJs",
-                    "能够灵活运用Bootstrap CSS、Ant Designt布局组件",
+                    "能够灵活运用Bootstrap CSS、Ant Design布局组件",
                     "使用过前端资源加载 / 打包工具Webpack"
                 ]
             },{
