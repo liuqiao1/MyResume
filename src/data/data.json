@@ -185,6 +185,67 @@
                 }
             ]
         }
-    ]
+    ],
+    "skills":{
+        "title": "技能",
+        "icon":"fa fa-space-shuttle",
+        "leftArticles":[
+            {"title":"HTML / CSS",
+            "icon":"fa fa-star",
+            "listItems" :[
+                "能够编写语义化的 HTML、模块化的 CSS",
+                "熟悉HTML5，了解CSS3"
+            ]},{
+                "title":"ECMAScript",
+                "icon":"fa fa-star",
+                "listItems" :[
+                    "熟悉 ECMAScript3、ECMAScript5",
+                    "了解ECMAScript6 , 并在项目中使用部分新特性"
+                ]
+            },{
+                "title":"DOM / BOM",
+                "icon":"fa fa-star",
+                "listItems" :[
+                    "熟悉原生 DOM 与 BOM 的使用及相关标准"
+                ]
+            },{
+                "title":"JAVA",
+                "icon":"fa fa-star",
+                "listItems" :[
+                    "熟悉面向对象编程思想, 了解SSM框架"
+                ]
+            },{
+                "title":"Ajax",
+                "icon":"fa fa-star",
+                "listItems" :[
+                    "熟悉Ajax基本操作"
+                ]
+            }
+        ],
+        "rightArticles":[
+            {
+                "title":"前端框架 / 工具",
+                "icon":"fa fa-star",
+                "listItems" :[
+                    "熟练使用 jQuery, 熟悉jQuery插件开发",
+                    "熟悉MVVM的思想，熟悉ReactJs",
+                    "能够灵活运用Bootstrap CSS、Ant Designt布局组件",
+                    "使用过前端资源加载 / 打包工具Webpack"
+                ]
+            },{
+                "title":"其他",
+                "icon":"fa fa-star",
+                "listItems" :[
+                    "了解HTTP、TCP/IP 等协议",
+                    "能够使用 Markdown 编写说明文档",
+                    "熟悉常用的SQL语法",
+                    "日常使用 Git 与 Visual Studio Code / Eclipse 进行开发，也使用过svn",
+                    "熟练使用chrome浏览器自带的调试器",
+                    "能够使用Axsure进行简单的设计",
+                    "能够快速阅读英文文档"
+                ]
+            }
+        ]
+    }
     
 }

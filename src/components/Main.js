@@ -27,6 +27,7 @@ class AppComponent extends React.Component {
 
     const siderItems = pageData.siderItems;
     const contentItems = pageData.contentItems;
+    const skills = pageData.skills;
     //const basicInfoProps =  pageData.basicInfoProps;
     //const contanctProps = pageData.contanctProps;
     //const jobIntentionProps = pageData.jobIntention;
@@ -78,95 +79,29 @@ class AppComponent extends React.Component {
 
          
 
-          <ContentItem title = '技能' icon = 'fa fa-space-shuttle'>
+          <ContentItem title = {skills.title} icon = {skills.icon}>
              {/*<Progress lable='CSS' levelDesp='熟练' level='80%' />*/}
              <div className = 'left-sec'>
-              <article className = 'project-node'>
-                <div className = 'project-node-title'><i className = 'fa fa-star'></i>HTML / CSS</div>
-                <div className = 'project-node-content'>
-                  <ul>
-                    <li>能够编写语义化的 HTML、模块化的 CSS</li>
-                    <li>熟悉HTML5，了解CSS3</li>
-                  </ul>
-                </div>
-              </article>
-
-              <article className = 'project-node'>
-                <div className = 'project-node-title'><i className = 'fa fa-star'></i>ECMAScript</div>
-                <div className = 'project-node-content'>
-                  <ul>
-                    <li>熟悉 ECMAScript3、ECMAScript5</li>
-                    <li>了解ECMAScript6 , 并在项目中使用部分新特性</li>
-                  </ul>
-                </div>
-              </article>
-
-              <article className = 'project-node'>
-                <div className = 'project-node-title'><i className = 'fa fa-star'></i>DOM / BOM</div>
-                <div className = 'project-node-content'>
-                  <ul>
-                    
-                    <li>熟悉原生 DOM 与 BOM 的使用及相关标准</li>
-                  </ul>
-                </div>
-              </article>
-
-              <article className = 'project-node'>
-                <div className = 'project-node-title'><i className = 'fa fa-star'></i>JAVA</div>
-                <div className = 'project-node-content'>
-                  <ul>
-                    <li>熟悉面向对象编程思想, 了解SSM框架</li>
-                  </ul>
-                </div>
-              </article>
-
-              <article className = 'project-node'>
-                <div className = 'project-node-title'><i className = 'fa fa-star'></i>Ajax</div>
-                <div className = 'project-node-content'>
-                  <ul>
-                    <li>熟悉面向对象编程思想, 了解SSM框架</li>
-                  </ul>
-                </div>
-              </article>
+               {
+                 skills.leftArticles.map( (item,key) => 
+                       <ArticleFigure  key = {key} title= {item.title} icon = {item.icon} listItems = {item.listItems} />
+                 )
+               }
              </div>
 
              <div className = 'right-sec'>
-               <article className = 'project-node'>
-                <div className = 'project-node-title'><i className = 'fa fa-star'></i>前端框架 / 工具</div>
-                <div className = 'project-node-content'>
-                  <ul>                 
-                    <li>熟练使用 jQuery, 熟悉jQuery插件开发</li>
-                    <li>熟悉MVVM的思想，熟悉ReactJs</li>
-                    <li>能够灵活运用Bootstrap CSS、Ant Designt布局组件</li>
-                    <li>使用过前端资源加载 / 打包工具Webpack</li>
-                  </ul>
-                </div>
-              </article>
-
-              <article className = 'project-node'>
-                <div className = 'project-node-title'><i className = 'fa fa-star'></i>其他</div>
-                <div className = 'project-node-content'>
-                  <ul>                 
-                    {/*<li>具备C和java语言基础，熟悉面向对象编程思想</li>*/}
-                    <li>了解HTTP、TCP/IP 等协议</li>
-                    <li>能够使用 Markdown 编写说明文档</li>
-                    <li>熟悉常用的SQL语法</li>
-                    <li>日常使用 Git 与 Visual Studio Code / Eclipse 进行开发，也使用过svn</li>
-                    <li>熟练使用chrome浏览器自带的调试器</li>
-                    <li>能够使用Axsure进行简单的设计</li>
-                    <li>能够快速阅读英文文档</li>
-                  </ul>
-                </div>
-              </article>
+               {
+                 skills.rightArticles.map( (item,key) => 
+                       <ArticleFigure  key = {key} title= {item.title} icon = {item.icon} listItems = {item.listItems} />
+                 )
+               }
+              
              </div>
              
               
           </ContentItem>
         </div>
 
-        
-        {/*<img src={avatarImage} alt="Yeoman Generator" />*/}
-        {/*<div className="notice">Please edit <code>src/components/Main.js</code> to get started!</div>*/}
       </div>
     );
   }
